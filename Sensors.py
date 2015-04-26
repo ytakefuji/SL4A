@@ -1,6 +1,6 @@
 import android
-import time
-droid = android.Android()
-droid.startSensingTimed(1, 500)
-time.sleep(1)
-print droid.readSensors().result
+from time import sleep
+a = android.Android()
+a.startSensingTimed(1, 500)
+sleep(1)
+print a.readSensors().result
